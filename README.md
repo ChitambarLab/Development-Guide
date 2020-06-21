@@ -2,6 +2,13 @@
 
 *Tips and tricks for writing software.*
 
+## About the ChitambarLab Github Group
+
+The ChitambarLab group is a collaborative space to share and publish software. Our goal is to build software tools that support general quantum information research while providing computational transparency into our own research.
+
+This github group supports the research of Dr. Eric Chitambar's Lab at the University of Illinois Urbana-Champaign, [https://quantum-entangled.ece.illinois.edu/](https://quantum-entangled.ece.illinois.edu/).
+
+
 ## Git Flow
 
 Git is used for version control in collaborative software development.
