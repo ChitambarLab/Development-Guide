@@ -40,11 +40,11 @@ A feature is a chunk of code which performs a new task or modifies existing func
 
 All new code should be developed in a feature branch named descriptively for the feature you are working on.
 
-1. Create a new branch: `git checkout -b new-branch-name`
+1. Create a new branch: `git checkout -b new-feature-name`
 2. Write and test some code.
 3. Add changes to to your branch: `git add new_file`
 4. Commit changes to your branch: `git commit -m "short description of change"`
-5. Push your changes to the local branch: `git push -u origin new-branch-name`
+5. Push your changes to the local branch: `git push -u origin new-feature-name`
 
 
 ### Merge changes
@@ -52,10 +52,11 @@ All new code should be developed in a feature branch named descriptively for the
 When a feature is complete, it's code must be merged with the integration branch.
 
 1. Pull the integration branch into your feature branch: `git pull --rebase origin integration`
-2. Test your changes to make sure you don't break integration.
-3. Checkout integration branch: `git checkout integration`
-4. Merge feature branch with integration branch: `git merge new-branch-name`
-5. Push merged commits to head of integration: `git push -u origin integration`
+    * Test your changes to make sure nothing is broken from integration.
+    * Commit any changes from integration to your feature branch: `git push -u origin new-feature-name`
+2. Checkout integration branch: `git checkout integration`
+3. Merge feature branch with integration branch: `git merge new-feature-name`
+4. Push merged commits to head of integration: `git push -u origin integration`
 
 ## Testing Code
 
