@@ -43,18 +43,19 @@ All new code should be developed in a feature branch named descriptively for the
 1. Create a new branch: `git checkout -b new-branch-name`
 2. Write and test some code.
 3. Add changes to to your branch: `git add new_file`
-4. Commit changes to your branch: `git commit -m "short description of change"
+4. Commit changes to your branch: `git commit -m "short description of change"`
+5. Push your changes to the local branch: `git push -ur origin new-branch-name`
 
 
 ### Merge changes
 
 When a feature is complete, it's code must be merged with the integration branch.
 
-1. Pull the `integration` branch into your feature branch: `git pull --rebase origin integration`
+1. Pull the integration branch into your feature branch: `git pull --rebase origin integration`
 2. Test your changes to make sure you don't break integration.
-3. Checkout `integration` branch: `git checkout integration`
-4. Merge feature branch with `integration` branch: `git merge new-branch-name`
-5. Push merged commits to head of `integration`: `git push -u origin integration`
+3. Checkout integration branch: `git checkout integration`
+4. Merge feature branch with integration branch: `git merge new-branch-name`
+5. Push merged commits to head of integration: `git push -u origin integration`
 
 An alternative merging strategy:
 
