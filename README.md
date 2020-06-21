@@ -17,12 +17,28 @@ Git is used for version control in collaborative software development. Best prac
 * `integration` - The branch where commits from different collaborators are merged together. The main purpose of the integration branch is serve as a buffer between new code and the stable code in `master`. The `integration` branch contains the most up-to-date codebase because it contains all changes which have not yet merged with `master`. 
 * `<feature>` - The branch where new code is developed. A feature branch is always created from the `integration` branch. Independent features should be developed in separate feature branches. 
 
+### Cloning a repository
+
+In order to run or make changes to code in a git repository, it must be downloaded locally. The `git clone` command handles this task.
+
+1. Copy the repository to your local machine: `git clone <repository-clone-url>`
+2. Navigate into the cloned project folder: `cd repository-dir`
+
 ### Get the latest code
+
+As collaborators submit code, your local version will be behind the head or `origin` of the branch. It is important to make sure that all changes are built upon the most-up-to-date changes.
 
 1. Switch to the `integration` branch: `git checkout integration`
 2. Get the most recent changes: `git pull origin integration`
 
 ### Develop a new feature
+
+A feature is some chunk of code which performs a new task or modifies existing functionality. Features should be
+* Small enough to be completed within a few hours of work.
+* Tested sufficiently to ensure bug free operation and correctness of functionality.
+* Documented such that a collaborator can make sense of your work.
+
+All new code should be developed in a feature branch named descriptively for the feature you are working on.
 
 1. Create a new branch: `git checkout -b new-branch-name`
 2. Write and test some code.
@@ -39,6 +55,10 @@ When a feature is complete, it's code must be merged with the integration branch
 3. Checkout `integration` branch: `git checkout integration`
 4. Merge feature branch with `integration` branch: `git merge new-branch-name`
 5. Push merged commits to head of `integration`: `git push -u origin integration`
+
+## Testing Code
+
+## Documenting Code
 
 ## Setup
 
