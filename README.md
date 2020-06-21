@@ -44,7 +44,7 @@ All new code should be developed in a feature branch named descriptively for the
 2. Write and test some code.
 3. Add changes to to your branch: `git add new_file`
 4. Commit changes to your branch: `git commit -m "short description of change"`
-5. Push your changes to the local branch: `git push -ur origin new-branch-name`
+5. Push your changes to the local branch: `git push -u origin new-branch-name`
 
 
 ### Merge changes
