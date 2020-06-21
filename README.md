@@ -33,7 +33,7 @@ As collaborators submit code, your local version will be behind the head or `ori
 
 ### Develop a new feature
 
-A feature is some chunk of code which performs a new task or modifies existing functionality. Features should be
+A feature is a chunk of code which performs a new task or modifies existing functionality. Features are
 * Small enough to be completed within a few hours of work.
 * Tested sufficiently to ensure bug free operation and correctness of functionality.
 * Documented such that a collaborator can make sense of your work.
