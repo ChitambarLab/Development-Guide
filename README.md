@@ -4,19 +4,12 @@
 
 ## About the ChitambarLab Github Group
 
-The ChitambarLab group is a collaborative space to share and publish software. Our goal is to build software tools that support general quantum information research while providing computational transparency into our own research.
-
-This github group supports the research of Dr. Eric Chitambar's Lab at the University of Illinois Urbana-Champaign, [https://quantum-entangled.ece.illinois.edu/](https://quantum-entangled.ece.illinois.edu/).
-
+The ChitambarLab github group is a collaborative space to share and publish software. Our goal is to build software tools that support general quantum information research while providing computational transparency into our own research. This github group supports the research of Dr. Eric Chitambar's Lab at the University of Illinois Urbana-Champaign, [https://quantum-entangled.ece.illinois.edu/](https://quantum-entangled.ece.illinois.edu/).
 
 ## Git Flow
 
-Git is used for version control in collaborative software development.
-
-Best practices for git workflows are described at
-[www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
-
-The following workflow outlines a best practice git workflow. Depending on the project and number of collaborators, this workflow can be simplified.
+Git is used for version control in collaborative software development. Best practices for git workflows are described at
+[www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).  The following workflow outlines a best practice git workflow. Depending on the project and number of collaborators, this workflow can be simplified.
 
 ### Branches
 
