@@ -57,17 +57,6 @@ When a feature is complete, it's code must be merged with the integration branch
 4. Merge feature branch with integration branch: `git merge new-branch-name`
 5. Push merged commits to head of integration: `git push -u origin integration`
 
-An alternative merging strategy:
-
-1. Checkout integration: `git checkout integration`
-2. Pull latest changes: `git pull origin integration`
-3. Checkout feature branch: `git checkout feature-branch`
-4. Add your changes on top latest changes to integration: `git rebase integration`
-5. Push your changes: `git push -f`
-6. In github webapp, create a merge request for changes.
-7. Select rebase and merge.
-
-
 ## Testing Code
 
 ## Documenting Code
