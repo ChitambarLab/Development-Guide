@@ -8,14 +8,14 @@ The ChitambarLab github group is a collaborative space to share and publish soft
 
 ## Git Flow
 
-Git is used for version control in collaborative software development. Best practices for git workflows are described at
-[www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).  The following workflow outlines a best practice git workflow. Depending on the project and number of collaborators, this workflow can be simplified.
+Git is used for version control in collaborative software development. A detailed git workflow is described at
+[www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
 
 ### Branches
 
-* `master` - The main branch for the codebase. This branch should always contain working and complete code.
-* `integration` - The branch where commits from different collaborators are merged together. The main purpose of the integration branch is serve as a buffer between new code and the stable code in `master`. The `integration` branch contains the most up-to-date codebase because it contains all changes which have not yet merged with `master`. 
-* `<feature>` - The branch where new code is developed. A feature branch is always created from the `integration` branch. Independent features should be developed in separate feature branches. 
+* `master` - The main branch for the codebase. This branch always contains working and complete code.
+* `integration` - The branch where commits from different collaborators are merged together. This branch is a buffer between new code and the stable code in `master`. 
+* `<feature>` - The branch where new code is developed.
 
 ### Cloning a repository
 
@@ -26,26 +26,24 @@ In order to run or make changes to code in a git repository, it must be download
 
 ### Get the latest code
 
-As collaborators submit code, your local version will be behind the head or `origin` of the branch. It is important to make sure that all changes are built upon the most-up-to-date changes.
-
 1. Switch to the `integration` branch: `git checkout integration`
 2. Get the most recent changes: `git pull origin integration`
 
 ### Develop a new feature
 
-A feature is a chunk of code which performs a new task or modifies existing functionality. Features are
-* Small enough to be completed within a few hours of work.
-* Tested sufficiently to ensure bug free operation and correctness of functionality.
-* Documented such that a collaborator can make sense of your work.
+A feature:
+* Performs a new task or modifies existing functionality.
+* Can be completed within a few hours of work.
+* Is tested sufficiently to ensure bug free operation and correctness of functionality.
+* Is documented such that a collaborator can make sense of your work.
 
-All new code should be developed in a feature branch named descriptively for the feature you are working on.
+All new code should be developed in a feature branch named for the work it contains.
 
 1. Create a new branch: `git checkout -b new-feature-name`
 2. Write and test some code.
 3. Add changes to to your branch: `git add new_file`
 4. Commit changes to your branch: `git commit -m "short description of change"`
 5. Push your changes to the local branch: `git push -u origin new-feature-name`
-
 
 ### Merge changes
 
@@ -58,17 +56,11 @@ When a feature is complete, it's code must be merged with the integration branch
 3. Merge feature branch with integration branch: `git merge new-feature-name`
 4. Push merged commits to head of integration: `git push -u origin integration`
 
-## Testing Code
-
-## Documenting Code
-
 ## Setup
 
 ### Python
 
-Python is widely used programming language. 
-
-For python install instructions, visit [www.python.org/downloads/](https://www.python.org/downloads/).
+Python is widely used programming language, install instructions are found at [www.python.org/downloads/](https://www.python.org/downloads/).
 
 The official python documentation can be found at [https://docs.python.org/3/](https://docs.python.org/3/).
 
@@ -86,9 +78,7 @@ To run Qiskit on a quantum computer you will need to create an account at [https
 
 ### Julia
 
-Julia is a high-performance technical programming language.
-
-For Julia install instructions, visit [https://julialang.org/downloads/](https://julialang.org/downloads/).
+Julia is a technical programming language, for Julia install instructions, visit [https://julialang.org/downloads/](https://julialang.org/downloads/).
 
 For Julia documentation, visit [https://docs.julialang.org/en/v1/](https://docs.julialang.org/en/v1/)
 
