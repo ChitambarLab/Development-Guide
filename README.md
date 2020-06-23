@@ -43,7 +43,8 @@ All new code should be developed in a feature branch named for the work it conta
 2. Write and test some code.
 3. Add changes to to your branch: `git add new_file`
 4. Commit changes to your branch: `git commit -m "short description of change"`
-5. Push your changes to the local branch: `git push -u origin new-feature-name`
+5. Rebase your commits on top of integration: `git pull --rebase origin integration`
+6. Push your changes to the local branch: `git push -u origin new-feature-name`
 
 ### Merge changes
 
