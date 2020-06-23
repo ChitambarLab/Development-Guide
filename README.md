@@ -82,3 +82,37 @@ Julia is a technical programming language, for Julia install instructions, visit
 
 For Julia documentation, visit [https://docs.julialang.org/en/v1/](https://docs.julialang.org/en/v1/)
 
+## Julia Development
+
+### Workflow
+
+1. Clone the git repository and create a feature branch off of integration.
+2. Open the julia REPL and enter Pkg mode by typing `]`. Then run `develop --local .` to build to module from your local files.
+3. Write a function in the `./src` directory and a test in the `./test` directory.
+4. Run the test:
+      * In Pkg mode, type `test PackageName` to run all tests for the package.
+      * Equivalently, run all tests with `julia test/runtests.jl` or, a single test with `julia test/path/to/test.jl`
+5. Document the new functionality:
+      * Follow the adding documentation instructions for [Documenter.jl](https://juliadocs.github.io/Documenter.jl/stable/man/guide/#Adding-Some-Docstrings-1).
+      * Build the local documentation `julia docs/make.jl`
+      * Host the docs webpage `python3 -m http.server --bind localhost`
+6. When finished with development, push your completed changes to your feature branch and merge into integration.
+
+
+### Writing Code
+
+An Integrated Development Environment (IDE) can help streamline the development process. How you write code is a matter of personal preference, but two great open-source text editors specialized for julia are
+* [VS Code](https://www.julia-vscode.org/)
+* [Atom](https://junolab.org/)
+
+
+### Automated Testing
+
+Tests make sure that your code works properly during and after development. Tests should be developed simultaneously. with your code. Software should not be considered complete if it is not tested. [Test-Driven Development](http://agiledata.org/essays/tdd.html) is a widely used practice in industry.
+
+Tests are stored in the `./test` directory. For more information about testing, please refer to the [Julia Test docs](https://docs.julialang.org/en/v1/stdlib/Test/).
+
+### Documentation
+
+The world will see your documentation so make sure it's professional, concise, and useful. Julia documentation is buit with [Documenter.jl](https://juliadocs.github.io/Documenter.jl/stable/). 
+
