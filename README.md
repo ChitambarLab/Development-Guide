@@ -95,7 +95,7 @@ For Julia documentation, visit [https://docs.julialang.org/en/v1/](https://docs.
 5. Document the new functionality:
       * Follow the adding documentation instructions for [Documenter.jl](https://juliadocs.github.io/Documenter.jl/stable/man/guide/#Adding-Some-Docstrings-1).
       * Build the local documentation `julia docs/make.jl`
-      * Host the docs webpage. First navigate to the `docs/build/` directory, then run `python3 -m http.server --bind localhost`
+      * Host the docs webpage. First navigate to the `./docs/build/` directory, then run `python3 -m http.server --bind localhost`
 6. When finished with development, push your completed changes to your feature branch and merge into integration.
 
 
