@@ -14,7 +14,6 @@ Git is used for version control in collaborative software development. A detaile
 ### Branches
 
 * `master` - The main branch for the codebase. This branch always contains working and complete code.
-* `integration` - The branch where commits from different collaborators are merged together. This branch is a buffer between new code and the stable code in `master`. 
 * `<feature>` - The branch where new code is developed.
 
 ### Cloning a repository
@@ -26,10 +25,12 @@ In order to run or make changes to code in a git repository, it must be download
 
 ### Get the latest code
 
-1. Switch to the `integration` branch: `git checkout integration`
-2. Get the most recent changes: `git pull origin integration`
+1. Switch to the `master` branch: `git checkout master`
+2. Get the most recent changes: `git pull origin master`
 
 ### Develop a new feature
+
+All new code should be developed in a feature branch named for the work it contains.
 
 A feature:
 * Performs a new task or modifies existing functionality.
@@ -37,25 +38,20 @@ A feature:
 * Is tested sufficiently to ensure bug free operation and correctness of functionality.
 * Is documented such that a collaborator can make sense of your work.
 
-All new code should be developed in a feature branch named for the work it contains.
-
 1. Create a new branch: `git checkout -b new-feature-name`
 2. Write and test some code.
 3. Add changes to to your branch: `git add new_file`
 4. Commit changes to your branch: `git commit -m "short description of change"`
-5. Rebase your commits on top of integration: `git pull --rebase origin integration`
-6. Push your changes to the local branch: `git push -u origin new-feature-name`
+5. Push your changes to the local branch: `git push -u origin new-feature-name`
 
 ### Merge changes
 
-When a feature is complete, it's code must be merged with the integration branch.
+When a feature is complete, it's code must be merged into the master branch.
+This is done by creating a *pull request* through the github UI.
 
-1. Pull the integration branch into your feature branch: `git pull --rebase origin integration`
-    * Test your changes to make sure nothing is broken from integration.
-    * Commit any changes from integration to your feature branch: `git push -u origin new-feature-name`
-2. Checkout integration branch: `git checkout integration`
-3. Merge feature branch with integration branch: `git merge new-feature-name`
-4. Push merged commits to head of integration: `git push -u origin integration`
+A pull request enables:
+* Collaborators to review your changes.
+* Automated tests to be run before merging.
 
 ## Setup
 
@@ -71,17 +67,17 @@ Jupyter Notebook is a web-based IDE for writing python and julia code. Notebooks
 
 For Jupyter Notebook install instructions, visit [https://jupyter.org/install.html](https://jupyter.org/install.html).
 
-### Qiskit
-
-For Qiskit install instructions, visit [https://qiskit.org/documentation/install.html](https://qiskit.org/documentation/install.html).
-
-To run Qiskit on a quantum computer you will need to create an account at [https://quantum-computing.ibm.com/](https://quantum-computing.ibm.com/).
-
 ### Julia
 
 Julia is a technical programming language, for Julia install instructions, visit [https://julialang.org/downloads/](https://julialang.org/downloads/).
 
 For Julia documentation, visit [https://docs.julialang.org/en/v1/](https://docs.julialang.org/en/v1/)
+
+### Qiskit
+
+For Qiskit install instructions, visit [https://qiskit.org/documentation/install.html](https://qiskit.org/documentation/install.html).
+
+To run Qiskit on a quantum computer you will need to create an account at [https://quantum-computing.ibm.com/](https://quantum-computing.ibm.com/).
 
 ## Julia Development
 
