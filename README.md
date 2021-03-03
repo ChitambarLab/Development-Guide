@@ -55,11 +55,12 @@ A pull request enables:
 
 ## Setup
 
-### Python
 
-Python is widely used programming language, install instructions are found at [www.python.org/downloads/](https://www.python.org/downloads/).
+### Julia
 
-The official python documentation can be found at [https://docs.python.org/3/](https://docs.python.org/3/).
+Julia is a technical programming language, for Julia install instructions, visit [https://julialang.org/downloads/](https://julialang.org/downloads/).
+
+For Julia documentation, visit [https://docs.julialang.org/en/v1/](https://docs.julialang.org/en/v1/)
 
 ### Jupyter Notebook
 
@@ -67,11 +68,11 @@ Jupyter Notebook is a web-based IDE for writing python and julia code. Notebooks
 
 For Jupyter Notebook install instructions, visit [https://jupyter.org/install.html](https://jupyter.org/install.html).
 
-### Julia
+### Python
 
-Julia is a technical programming language, for Julia install instructions, visit [https://julialang.org/downloads/](https://julialang.org/downloads/).
+Python is widely used programming language, install instructions are found at [www.python.org/downloads/](https://www.python.org/downloads/).
 
-For Julia documentation, visit [https://docs.julialang.org/en/v1/](https://docs.julialang.org/en/v1/)
+The official python documentation can be found at [https://docs.python.org/3/](https://docs.python.org/3/).
 
 ### Qiskit
 
