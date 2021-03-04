@@ -42,7 +42,7 @@ New code is developed in a feature branch. The changes in the feature branch are
 
 ### Merge changes
 
-When a feature is complete, it's code must be merged into the master branch.
+When a feature is complete, it's code must be merged into the `main` branch.
 This is done by creating a *pull request* through the github UI.
 
 A pull request enables:
