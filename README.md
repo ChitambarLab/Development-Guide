@@ -8,35 +8,31 @@ The ChitambarLab github group is a collaborative space to share and publish soft
 
 ## Git Flow
 
-Git is used for version control in collaborative software development. A detailed git workflow is described at
+Git provides version control for collaborative software development. Best practice git workflows are described at
 [www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+
+Windows users may need to download git at [https://git-scm.com/download/win](https://git-scm.com/download/win).
 
 ### Branches
 
-* `master` - The main branch for the codebase. This branch always contains working and complete code.
+* `main` - The main branch for the codebase (note: older repositorys use `master`). This branch should always contain a working and complete version of the code.
 * `<feature>` - The branch where new code is developed.
 
 ### Cloning a repository
 
-In order to run or make changes to code in a git repository, it must be downloaded locally. The `git clone` command handles this task.
+To develop code in a git repository, you must download it locally. This task is handled by the `git clone` command.
 
 1. Copy the repository to your local machine: `git clone <repository-clone-url>`
 2. Navigate into the cloned project folder: `cd repository-dir`
 
 ### Get the latest code
 
-1. Switch to the `master` branch: `git checkout master`
-2. Get the most recent changes: `git pull origin master`
+1. Switch to the `main` branch: `git checkout main`
+2. Get the most recent changes: `git pull origin main`
 
 ### Develop a new feature
 
-All new code should be developed in a feature branch named for the work it contains.
-
-A feature:
-* Performs a new task or modifies existing functionality.
-* Can be completed within a few hours of work.
-* Is tested sufficiently to ensure bug free operation and correctness of functionality.
-* Is documented such that a collaborator can make sense of your work.
+New code is developed in a feature branch. The changes in the feature branch are independent from those in `main`.
 
 1. Create a new branch: `git checkout -b new-feature-name`
 2. Write and test some code.
@@ -52,6 +48,11 @@ This is done by creating a *pull request* through the github UI.
 A pull request enables:
 * Collaborators to review your changes.
 * Automated tests to be run before merging.
+
+To preserve a working and maintainable codebase in the `main` branch, it is important that any merged changes satisfy the following requirements:
+* Performs a new task or modifies existing functionality.
+* Includes tests that ensure bug free operation and correctness of functionality.
+* Includes documenation such that a collaborator can make sense of your work.
 
 ## Setup
 
