@@ -6,6 +6,13 @@
 
 The ChitambarLab github group is a collaborative space to share and publish software. Our goal is to build software tools that support general quantum information research while providing computational transparency into our own research. This github group supports the research of Dr. Eric Chitambar's Lab at the University of Illinois Urbana-Champaign, [https://quantum-entangled.ece.illinois.edu/](https://quantum-entangled.ece.illinois.edu/).
 
+## TExt Editors
+
+How you choose to write code is a matter of personal preference, but note that an Integrated Development Environment (IDE) can help streamline the development process.
+Two great IDE's are:
+* [VS Code](https://www.julia-vscode.org/)
+* [Atom](https://junolab.org/)
+
 ## Git Flow
 
 Git provides version control for collaborative software development. Best practice git workflows are described at
@@ -96,13 +103,6 @@ To run Qiskit on a quantum computer you will need to create an account at [https
       * Build the local documentation `julia docs/make.jl`
       * Host the docs webpage. First navigate to the `./docs/build/` directory, then run `python3 -m http.server --bind localhost`
 6. When finished with development, push your completed changes to your feature branch and merge into integration.
-
-
-### Writing Code
-
-An Integrated Development Environment (IDE) can help streamline the development process. How you write code is a matter of personal preference, but two great open-source text editors specialized for julia are
-* [VS Code](https://www.julia-vscode.org/)
-* [Atom](https://junolab.org/)
 
 
 ### Automated Testing
